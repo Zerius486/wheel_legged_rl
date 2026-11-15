@@ -18,7 +18,14 @@ importlib.import_module("wheel_legged_rl.tasks")
 
 
 def _format_presets(preset_map: dict | None) -> str:
-    """Format the available preset selectors for one task."""
+    """Format the available preset selectors for one task.
+
+    Args:
+        preset_map: Mapping from PresetTarget to available preset names, or None.
+
+    Returns:
+        Formatted multiline summary string, or "(unavailable)" / "(none)".
+    """
     if preset_map is None:
         return "(unavailable)"
 

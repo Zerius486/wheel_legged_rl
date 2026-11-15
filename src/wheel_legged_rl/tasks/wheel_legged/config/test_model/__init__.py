@@ -3,6 +3,8 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
+"""Gymnasium registration for the test-model v1.0 wheel-legged locomotion task."""
+
 import gymnasium as gym
 
 from . import agents
@@ -13,12 +15,12 @@ from . import agents
 
 
 gym.register(
-    id="WheelLeggedRl-Wheel-Legged-Cartpole",
+    id="WheelLeggedRl-Wheel-Legged-TestModel-v1",
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": f"{__name__}.env_cfg:WheelLeggedEnvCfg",
         "default_agent": "rsl_rl",
-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:PPORunnerCfg",
+        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:WheelLeggedPPORunnerCfg",
     },
 )

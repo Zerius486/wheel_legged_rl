@@ -3,4 +3,4 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-"""Agent configurations for the generated task."""
+"""RL agent configurations for the test-model v1.0 wheel-legged locomotion task."""

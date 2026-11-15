@@ -83,7 +83,11 @@ line-length = 120
 target-version = "py312"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "UP", "B", "SIM"]
+select = ["E", "F", "I", "UP", "B", "SIM", "D", "N", "RUF"]
+ignore = ["RUF012"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
 
 [tool.ruff.lint.isort]
 known-first-party = ["wheel_legged_rl"]
@@ -129,7 +133,7 @@ markers = [
 ]
 
 [tool.codespell]
-skip = "*.usd,*.usda,*.usdc,*.json,*.onnx,*.pt,*.mp4,*.data,uv.lock,logs"
+skip = "*.usd,*.usda,*.usdc,*.json,*.onnx,*.pt,*.mp4,*.data,*.pdf,uv.lock,logs,Reference"
 
 [[tool.uv.index]]
 url = "https://pypi.nvidia.com"

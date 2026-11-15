@@ -3,4 +3,4 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-"""Generated task package."""
+"""Wheel-legged locomotion tasks and MDP components."""

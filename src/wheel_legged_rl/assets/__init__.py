@@ -1,0 +1,48 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+"""Robot asset configurations for ``wheel_legged_rl``."""
+
+from .test_model import (
+    GAIN_RANDOMIZATION_RANGE,
+    HIP_DAMPING,
+    HIP_EFFORT_LIMIT,
+    HIP_JOINT_NAMES,
+    HIP_STIFFNESS,
+    HIP_VELOCITY_LIMIT,
+    MODEL_NAME,
+    PASSIVE_KNEE_JOINT_NAMES,
+    TEST_MODEL_ASSET_DIR,
+    TEST_MODEL_CFG,
+    TEST_MODEL_USD_PATH,
+    WHEEL_DAMPING,
+    WHEEL_EFFORT_LIMIT,
+    WHEEL_GEAR_RATIO,
+    WHEEL_JOINT_NAMES,
+    WHEEL_MOTOR_CONT_TORQUE,
+    WHEEL_MOTOR_NO_LOAD_RPM,
+    WHEEL_VELOCITY_LIMIT,
+)
+
+__all__ = [
+    "GAIN_RANDOMIZATION_RANGE",
+    "HIP_DAMPING",
+    "HIP_EFFORT_LIMIT",
+    "HIP_JOINT_NAMES",
+    "HIP_STIFFNESS",
+    "HIP_VELOCITY_LIMIT",
+    "MODEL_NAME",
+    "PASSIVE_KNEE_JOINT_NAMES",
+    "TEST_MODEL_ASSET_DIR",
+    "TEST_MODEL_CFG",
+    "TEST_MODEL_USD_PATH",
+    "WHEEL_DAMPING",
+    "WHEEL_EFFORT_LIMIT",
+    "WHEEL_GEAR_RATIO",
+    "WHEEL_JOINT_NAMES",
+    "WHEEL_MOTOR_CONT_TORQUE",
+    "WHEEL_MOTOR_NO_LOAD_RPM",
+    "WHEEL_VELOCITY_LIMIT",
+]
