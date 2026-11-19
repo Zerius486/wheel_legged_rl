@@ -20,7 +20,8 @@ TEST_MODEL_ASSET_DIR: Path = Path(__file__).resolve().parent / "test_model_v1.0"
 TEST_MODEL_USD_PATH: Path = TEST_MODEL_ASSET_DIR / "robot.usda"
 
 # Actuator specifications (baseline gains before reset-time domain randomization).
-HIP_EFFORT_LIMIT: float = 20.0  # N·m
+HIP_EFFORT_LIMIT: float = 20.0  # N·m (DM8009P-2EC rated continuous torque)
+HIP_PEAK_EFFORT_LIMIT: float = 40.0  # N·m (DM8009P-2EC peak torque for jumping)
 HIP_VELOCITY_LIMIT: float = 10.471975511965978  # 100 rpm in rad/s
 HIP_STIFFNESS: float = 30.0  # N·m/rad
 HIP_DAMPING: float = 1.0  # N·m·s/rad
